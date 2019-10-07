@@ -65,9 +65,8 @@
     <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\CubePlacement.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\ObjectPlacement.cs" />
-    <Compile Include="Assets\Scripts\SelectionManager.cs" />
     <Compile Include="Assets\Scripts\SpawnObjects.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/matth/OneDrive/Desktop/Game Engine Design and Implementation/Assignment 2 - 100662523 - 100655290/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

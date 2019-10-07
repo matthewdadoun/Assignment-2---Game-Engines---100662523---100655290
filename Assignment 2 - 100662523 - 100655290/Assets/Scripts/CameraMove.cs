@@ -21,8 +21,6 @@ public class CameraMove : MonoBehaviour
         Vector3 forwardMovement = transform.forward * vertInput;
         Vector3 rightMovement = transform.right * horizInput;
 
-        Rigidbody body = GetComponent<Rigidbody>();
-
         transform.position += (forwardMovement + rightMovement) * Time.deltaTime;
         if (Input.GetKey(KeyCode.Space))
         {

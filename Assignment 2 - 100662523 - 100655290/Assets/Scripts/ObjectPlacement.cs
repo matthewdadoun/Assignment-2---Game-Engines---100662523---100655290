@@ -6,6 +6,7 @@ public class ObjectPlacement : MonoBehaviour
 {
     public GameObject Cube;
     public GameObject Sphere;
+    public GameObject Plane;
     public Transform theDest;
     void Update()
     { 
@@ -17,13 +18,23 @@ public class ObjectPlacement : MonoBehaviour
             Cube.transform.position = gameObject.transform.position;
             Cube.transform.rotation = gameObject.transform.rotation;
             Sphere.SetActive(false);
+            Plane.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Cube.SetActive(false);
             Sphere.SetActive(true);
+            Plane.SetActive(false);
             Sphere.transform.position = gameObject.transform.position;
             Sphere.transform.rotation = gameObject.transform.rotation;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Cube.SetActive(false);
+            Sphere.SetActive(false);
+            Plane.SetActive(true);
+            Plane.transform.position = gameObject.transform.position;
+            Plane.transform.rotation = gameObject.transform.rotation;
         }
     }
     
